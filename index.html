@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bùi Khắc Ngọc | Backend & DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background: radial-gradient(circle at top right, #1e293b, #0f172a); color: #e2e8f0; scroll-behavior: smooth; font-size: 1.1rem; }
+        .glass { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .glass:hover { border-color: rgba(56, 189, 248, 0.4); box-shadow: 0 0 20px rgba(56, 189, 248, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow { position: absolute; width: 300px; height: 300px; background: rgba(56, 189, 248, 0.15); filter: blur(100px); border-radius: 50%; z-index: -1; }
+    </style>
+</head>
+<body class="leading-relaxed antialiased">
+
+    <!-- Glow backgrounds -->
+    <div class="glow top-20 left-10"></div>
+    <div class="glow bottom-20 right-10"></div>
+
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text">NGOC BK</span>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="hover:text-sky-400 transition">Giới thiệu</a>
+                <a href="#experience" class="hover:text-sky-400 transition">Kinh nghiệm</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Dự án</a>
+                <a href="#education" class="hover:text-sky-400 transition">Học vấn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-6xl md:text-8xl font-black mb-6">Bùi Khắc Ngọc</h1>
+            <p class="text-2xl md:text-3xl text-slate-400 mb-8 max-w-3xl mx-auto">
+                Kỹ sư <span class="text-sky-400 font-mono">Backend & DevOps</span> chuyên sâu về hệ thống Microservices, Cloud-native và bảo mật.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:khacngocptit@gmail.com" class="p-3 glass rounded-full hover:text-sky-400"><i class="fas fa-envelope fa-lg"></i></a>
+                <a href="https://github.com/khacngocptit" class="p-3 glass rounded-full hover:text-sky-400"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/ngocbk/" class="p-3 glass rounded-full hover:text-sky-400"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-10 container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-sky-400 mb-2">Backend</h3>
+                <p class="text-base">NestJS, Node.js, TypeScript</p>
+            </div>
+            <div class="glass p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-sky-400 mb-2">DevOps</h3>
+                <p class="text-base">K8s, Docker, AWS, CI/CD</p>
+            </div>
+            <div class="glass p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-sky-400 mb-2">Database</h3>
+                <p class="text-base">Postgres, MongoDB, Redis</p>
+            </div>
+            <div class="glass p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-sky-400 mb-2">Monitoring</h3>
+                <p class="text-base">Grafana, Prometheus, Loki</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 border-l-4 border-sky-400 pl-4 uppercase tracking-wider">Kinh nghiệm làm việc</h2>
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l border-slate-700">
+                <div class="absolute w-4 h-4 bg-sky-400 rounded-full -left-[8.5px] top-1"></div>
+                <h3 class="text-2xl font-bold">Backend Developer & DevOps @ Học viện PTIT</h3>
+                <p class="text-sky-400 font-mono text-base mb-2">03/2025 - Hiện tại</p>
+                <p class="text-slate-400">Thiết kế kiến trúc Microservices, vận hành K8s on-premise/AWS và xây dựng hệ thống Observability toàn diện.</p>
+            </div>
+            <div class="relative pl-8 border-l border-slate-700">
+                <div class="absolute w-4 h-4 bg-slate-600 rounded-full -left-[8.5px] top-1"></div>
+                <h3 class="text-2xl font-bold">Backend NestJS Developer @ A.I.Soft</h3>
+                <p class="text-sky-400 font-mono text-base mb-2">12/2022 - 02/2025</p>
+                <p class="text-slate-400">Phát triển RESTful API hiệu năng cao, tối ưu hóa database và xử lý message queue với RabbitMQ.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 border-l-4 border-sky-400 pl-4 uppercase tracking-wider">Dự án tiêu biểu</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- DevOps & Infra -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-server mr-3"></i>Hạ tầng & DevOps</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Triển khai Microservices, xây dựng hệ thống giám sát toàn diện và tự động hóa CI/CD.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> K8s, Docker, AWS, Grafana Stack, Signoz.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> Các hệ thống Đại học & hạ tầng công ty.</p>
+                    </div>
+                </div>
+                <!-- Tài chính -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-wallet mr-3"></i>Tài chính & Thanh toán</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Hệ thống quản lý hóa đơn và tích hợp cổng thanh toán ngân hàng (Agribank, BIDV, Vietinbank).</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NestJS, PostgreSQL, Redis.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> PTIT, VWA, APD, DAV, HLU, USSH.</p>
+                    </div>
+                </div>
+                <!-- QLKH -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-microscope mr-3"></i>Quản lý Khoa học</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Quản lý đề tài và sản phẩm NCKH theo quy trình nghiệp vụ đặc thù của từng đơn vị.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NestJS, MongoDB, Elasticsearch, Redis.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> Bộ KH&CN, Viettel, PTIT, FTU, VWA.</p>
+                    </div>
+                </div>
+                <!-- Tuyển sinh số -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-user-graduate mr-3"></i>Tuyển sinh số</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Hệ thống xét tuyển và nhập học trực tuyến quy mô hàng chục nghìn thí sinh.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NestJS, MongoDB, Redis.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> 11+ trường Đại học (PTIT, FTU, HANU, HLU...).</p>
+                    </div>
+                </div>
+                <!-- S-Link -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-link mr-3"></i>Hệ sinh thái S-Link</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Quản lý biểu mẫu động, dịch vụ văn phòng và công tác sinh viên tập trung.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NestJS, MongoDB, RabbitMQ, Redis.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> PTIT, VWA, VinhUni, CMC, APD.</p>
+                    </div>
+                </div>
+                <!-- QLDT & VBCC -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-certificate mr-3"></i>Đào tạo & Văn bằng</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Quản lý thông tin đào tạo và hệ thống xác thực văn bằng chứng chỉ số.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NestJS, PostgreSQL, RabbitMQ, Redis.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> PTIT, VWA, CMC, APD.</p>
+                    </div>
+                </div>
+                <!-- NL2SQL (Master Thesis) -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold mb-5 text-sky-400 flex items-center"><i class="fas fa-brain mr-3"></i>Nghiên cứu NL2SQL</h3>
+                    <div class="text-base space-y-3 text-slate-300">
+                        <p><i class="fas fa-info-circle text-sky-500 mr-2"></i><strong>Mô tả:</strong> Đề án Thạc sĩ (8.2/10) về chuyển đổi ngôn ngữ tự nhiên sang SQL.</p>
+                        <p><i class="fas fa-code text-sky-500 mr-2"></i><strong>Công nghệ:</strong> NLP, PostgreSQL.</p>
+                        <p><i class="fas fa-university text-sky-500 mr-2"></i><strong>Đơn vị:</strong> Học viện Công nghệ Bưu chính Viễn thông (PTIT).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-20 container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 border-l-4 border-sky-400 pl-4 uppercase tracking-wider">Học vấn</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-sky-400 font-mono text-base">2024 - 2026</p>
+                <h3 class="text-2xl font-bold">Thạc sĩ Hệ thống thông tin</h3>
+                <p class="text-slate-300">Học viện Công nghệ Bưu chính Viễn thông</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-sky-400 font-mono text-base">2018 - 2023</p>
+                <h3 class="text-2xl font-bold">Kỹ sư An toàn thông tin</h3>
+                <p class="text-slate-300">Học viện Công nghệ Bưu chính Viễn thông</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>&copy; 2024 Bùi Khắc Ngọc. Built with Tailwind CSS & ❤️</p>
+    </footer>
+
+</body>
+</html>
